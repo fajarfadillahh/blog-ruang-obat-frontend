@@ -11,7 +11,7 @@ export default function CardArticle() {
         </p>
 
         <div className="mb-4 flex flex-col gap-1">
-          <h1 className="group-hover:text-ruangobat line-clamp-2 text-lg font-bold -tracking-wide text-gray-900 group-hover:underline">
+          <h1 className="group-hover:text-ruangobat line-clamp-2 text-lg font-bold -tracking-wide text-gray-900 group-hover:underline md:text-xl">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
             temporibus.
           </h1>
