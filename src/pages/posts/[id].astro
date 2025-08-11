@@ -1,0 +1,14 @@
+---
+import Details from "@/components/section/Details";
+import Layout from "@/layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { id: 1 } }];
+}
+
+const { id } = Astro.params;
+---
+
+<Layout title={`Detail Artikel ${id}`}>
+  <Details />
+</Layout>
