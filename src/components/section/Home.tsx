@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="grid gap-20 py-16">
       <div className="grid gap-1">
-        <h1 className="text-4xl font-extrabold -tracking-wide text-gray-900">
+        <h1 className="text-2xl font-extrabold -tracking-wide text-gray-900 md:text-4xl">
           Cerita dari RuangObat<span className="text-ruangobat">.</span>
         </h1>
 
@@ -26,15 +26,15 @@ export default function HomePage() {
           {/* === artikel paling baru === */}
           <a
             href="/posts/1"
-            className="group grid grid-cols-[500px_1fr] gap-4 hover:cursor-pointer"
+            className="group grid gap-4 hover:cursor-pointer lg:grid-cols-[500px_1fr]"
           >
-            <div className="flex flex-col justify-between gap-8">
+            <div className="order-2 flex flex-col justify-between gap-8 md:-order-1">
               <div className="grid gap-2">
                 <p className="text-ruangobat mb-4 leading-[170%] font-medium">
                   Topik
                 </p>
 
-                <h1 className="group-hover:text-ruangobat line-clamp-2 text-2xl font-bold -tracking-wide text-gray-900 capitalize group-hover:underline">
+                <h1 className="group-hover:text-ruangobat line-clamp-2 text-xl font-bold -tracking-wide text-gray-900 capitalize group-hover:underline md:text-2xl">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Asperiores, quo.
                 </h1>
@@ -58,7 +58,7 @@ export default function HomePage() {
           </a>
 
           {/* === list artikel terbaru === */}
-          <div className="grid grid-cols-3 items-start gap-4">
+          <div className="grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }).map((_, index) => (
               <CardArticle key={index} />
             ))}
@@ -81,7 +81,7 @@ export default function HomePage() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-3 items-start gap-4">
+        <div className="grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 6 }).map((_, index) => (
             <CardArticle key={index} />
           ))}
