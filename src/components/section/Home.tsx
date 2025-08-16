@@ -1,6 +1,5 @@
 import CardArticle from "@/components/card/CardArticle";
 import DummyThumbnail from "@/components/DummyThumbnail";
-import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "@phosphor-icons/react";
 
 export default function HomePage() {
@@ -48,8 +47,7 @@ export default function HomePage() {
               </div>
 
               <p className="leading-[170%] font-medium text-gray-500">
-                08 Agustus 2025 -{" "}
-                <span className="text-ruangobat">Kategori</span>
+                08 Agustus 2025
               </p>
             </div>
 
@@ -72,13 +70,13 @@ export default function HomePage() {
             Artikel Utama
           </h5>
 
-          <Button
-            variant="link"
-            size="sm"
-            className="w-max font-semibold text-gray-900 hover:cursor-pointer"
+          <a
+            href="/posts"
+            className="inline-flex w-max items-center gap-2 text-sm font-semibold text-gray-900 hover:underline"
           >
-            Lihat Semua <ArrowRightIcon weight="bold" size={18} />
-          </Button>
+            Lihat Semua
+            <ArrowRightIcon weight="bold" size={18} />
+          </a>
         </div>
 
         <div className="grid items-start gap-4 md:grid-cols-2 lg:grid-cols-3">

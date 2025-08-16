@@ -7,13 +7,13 @@ export default function CardArticle() {
 
       <div className="grid gap-2">
         <p className="text-ruangobat text-sm leading-[170%] font-medium">
-          Kategori
+          Topik
         </p>
 
         <div className="mb-4 flex flex-col gap-1">
           <h1 className="group-hover:text-ruangobat line-clamp-2 text-lg font-bold -tracking-wide text-gray-900 group-hover:underline md:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-            temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            incidunt dolore dicta quas debitis optio animi.
           </h1>
           <p className="line-clamp-3 text-sm leading-[170%] font-medium text-gray-500">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
