@@ -1,13 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { ArrowLeftIcon } from "@phosphor-icons/react";
-import DummyThumbnail from "../DummyThumbnail";
+import DummyThumbnail from "@/components/DummyThumbnail";
+import ButtonBack from "@/components/button/ButtonBack";
 
 export default function DetailsPage() {
   return (
     <div className="grid gap-8 py-16">
-      <Button variant="outline" className="w-max font-semibold">
-        <ArrowLeftIcon weight="bold" size={18} /> Kembali
-      </Button>
+      <ButtonBack href="/posts" />
 
       {/* === main content article === */}
       <div className="grid w-full max-w-3xl gap-16 justify-self-center">
