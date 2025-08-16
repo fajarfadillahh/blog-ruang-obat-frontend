@@ -64,6 +64,26 @@ export default function HomePage() {
         </div>
       </div>
 
+      <div className="my-10 flex flex-wrap items-center justify-between gap-8 rounded-xl border-2 border-gray-500/10 p-8">
+        <div className="grid">
+          <h5 className="text-xl leading-[170%] font-bold text-gray-900">
+            Cari Artikel Berdasarkan Topik
+          </h5>
+
+          <p className="max-w-[600px] leading-[170%] font-medium text-gray-500">
+            Temukan artikel berdasarkan topik yang kamu minati. Mulai dari
+            kesehatan, farmasi, tips & trik, dan masih banyak lagi.
+          </p>
+        </div>
+
+        <a
+          href="/topics"
+          className="hover:bg-ruangobat inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-sm font-semibold text-white"
+        >
+          Semua Topik Artikel
+        </a>
+      </div>
+
       <div className="grid gap-4">
         <div className="flex items-end justify-between gap-4 border-b-2 border-gray-900/5 pb-2">
           <h5 className="text-lg leading-[170%] font-semibold text-gray-900">
